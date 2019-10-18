@@ -1,0 +1,17 @@
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="" class="brand-logo right">Controle de Ponto</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="/cadastrar-pessoa-fisica">Cadastro Pessoa Física </a></li>
+      <li routerLinkActive="active"><a routerLink="/cadastrar-empresa">Cadastrar Empresa</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['empresa', idCursos.value]">Empresa com ID</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <p>Entre com o id da empresa</p>
+  <input #idCursos>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,52 @@
+<div class="row">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="nome" type="text" class="validate" name="nome" ngModel="">
+        <label for="nome">Nome</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="cpf" type="text" class="validate" name="cpf" ngModel>
+        <label for="cpf">Cpf</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="valorHora" type="text" name="valorHora" ngModel class="validate">
+        <label for="valorHora">valor hora</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" name="email" ngModel class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="Password" name="senha" ngModel type="password" class="validate">
+        <label for="Password">Password</label>
+      </div>
+    </div>
+
+    <button class="btn waves-effect waves-light" type="submit">
+      Salvar
+    </button>
+
+  </form>
+</div>
+
+
+<!--
+  <div class="row">
+      <div class="col s12">
+        This is an inline input field:
+        <div class="input-field inline">
+          <input id="email_inline" type="email" class="validate">
+          <label for="email_inline">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+      </div>
+    </div>
+
+-->
